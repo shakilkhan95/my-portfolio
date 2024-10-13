@@ -418,6 +418,12 @@ footer ul li a{
 }
 
 @media(max-width:600px){
+    .about {
+        margin-top: 50px;
+    }
+    section{
+        padding: 5rem 12%;
+    }
     header #menu-icon{
         display: block;
     }
@@ -452,6 +458,9 @@ footer ul li a{
     .about img{
         width: 80vw;
     }
+    .grid-card{
+        gap: 0.5rem;
+    }
     .project-card img{
         width: 60vw;
     }
@@ -465,5 +474,45 @@ footer ul li a{
     }
     footer ul{
         gap: 1rem;
+    }
+}
+
+@media(max-width:430px){
+    .section-title{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .input-box input{
+        padding: 0.5rem 2rem;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .input-box input::placeholder{
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:390px){
+    .projects-grid{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+    .project-card{
+        padding: 2rem 0;
+        gap: 1rem;
+    }
+    .project-card .btn{
+        padding: 0.5rem;
+    }
+}
+
+@media(max-width:325px){
+    footer ul li a{
+        font-weight: 500;
+    }
+    
+    .copyright {
+        font-weight: normal;
+        font-size: 0.8rem;
     }
 }
